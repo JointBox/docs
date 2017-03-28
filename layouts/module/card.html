@@ -1,6 +1,6 @@
 <div class="col-md-4 col-sm-6 col-xxs-12">
     <a href="{{ .RelPermalink }}" class="module-item to-animate">
-        <img src="/images/modules/{{ .Params.image }}" alt="{{ .Params.verbose_name }}" class="img-responsive">
+        <img src="{{ $.Site.BaseURL }}/images/modules/{{ .Params.image }}" alt="{{ .Params.verbose_name }}" class="img-responsive">
         <div class="text">
             <h2>{{ .Params.verbose_name }}</h2>
             <span>{{ delimit .Params.tags ", " }}</span>

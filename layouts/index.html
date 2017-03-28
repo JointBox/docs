@@ -1,6 +1,6 @@
 {{ partial "header.html" . }}
 
-<section id="fh5co-home" data-section="home" style="background-image: url(../images/cover-hardware-pcb.jpeg)"
+<section id="fh5co-home" data-section="home" style="background-image: url('{{ $.Site.BaseURL }}/images/cover-hardware-pcb.jpeg')"
          data-stellar-background-ratio="0.5">
     <div class="gradient"></div>
     <div class="container">
@@ -8,7 +8,7 @@
             <div class="text-inner">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="to-animate"><img class="logo" src="images/logo-white.png" width="200"
+                        <h1 class="to-animate"><img class="logo" src="{{ $.Site.BaseURL }}/images/logo-white.png" width="200"
                                                     alt="Joint Box"></h1>
                         <h2 class="to-animate">Your DIY smart home. Simplified.</h2>
                     </div>
@@ -33,7 +33,7 @@
                     <p><a href="#" class="btn btn-primary">Getting Started</a></p>
                 </div>
             </div>
-            <div class="block to-animate" style="background-image: url(images/raspberry-pi.jpg);">
+            <div class="block to-animate" style="background-image: url('{{ $.Site.BaseURL }}/images/raspberry-pi.jpg');">
                 <div class="overlay-darker"></div>
                 <div class="overlay"></div>
                 <div class="text">
@@ -46,7 +46,7 @@
                 </div>
             </div>
             <div class="block to-animate"
-                 style="background-image: url(images/network-cable-ethernet-computer.jpeg);">
+                 style="background-image: url('{{ $.Site.BaseURL }}/images/network-cable-ethernet-computer.jpeg');">
                 <div class="overlay-darker"></div>
                 <div class="overlay"></div>
                 <div class="text">

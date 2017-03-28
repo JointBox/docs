@@ -1,7 +1,7 @@
 ---
 languageCode: "en-us"
 title: "JointBox - Your DIY smart home. Simplified."
-baseURL: "http://jointbox.org/"
+baseURL: "https://jointbox.github.io/docs"
 metaDataFormat: "yaml"
 # color-codes for highlighting derived from this style
 pygmentsStyle: "monokai"
