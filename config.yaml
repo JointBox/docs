@@ -1,0 +1,14 @@
+---
+languageCode: "en-us"
+title: "JointBox - Your DIY smart home. Simplified."
+baseURL: "http://jointbox.org/"
+metaDataFormat: "yaml"
+# color-codes for highlighting derived from this style
+pygmentsStyle: "monokai"
+
+params:
+  GithubLink: "https://github.com/JointBox/jointbox"
+  TwitterLink: "https://twitter.com/"
+  YoutubeLink: "https://youtube.com/"
+  Author: "Dmitry Berezovsky"
+...
