@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://jointbox.org/module/button/</loc>
+    <lastmod>2017-03-28T21:51:25+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/module/power_key/</loc>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/module/w1_thermometer/</loc>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/tags/1-wire/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/tags/core/</loc>
+    <lastmod>2017-03-28T21:51:25+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/tags/gpio/</loc>
+    <lastmod>2017-03-28T21:51:25+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/</loc>
+    <lastmod>2017-03-28T21:51:25+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/tags/lights/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/tags/measurement/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/module/</loc>
+    <lastmod>2017-03-28T21:51:25+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/tags/phisical/</loc>
+    <lastmod>2017-03-28T21:51:25+03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jointbox.org/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+</urlset>
