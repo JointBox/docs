@@ -15,7 +15,8 @@
       <pubDate>Tue, 28 Mar 2017 21:51:25 +0300</pubDate>
       
       <guid>https://jointbox.github.io/docs/module/button/</guid>
-      <description></description>
+      <description>&lt;p&gt;Test page&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -26,13 +27,46 @@
       <guid>https://jointbox.github.io/docs/module/power_key/</guid>
       <description>
 
-&lt;h1 id=&#34;power-key-module&#34;&gt;Power Key Module&lt;/h1&gt;
-
 &lt;p&gt;This is description&lt;/p&gt;
 
 &lt;h2 id=&#34;parameters&#34;&gt;Parameters&lt;/h2&gt;
 
-&lt;p&gt;Parameters will be here&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;gpio&lt;/strong&gt; GPIO pin identifier. The pin connected to the executive
+module (e.g. relay)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;state&#34;&gt;State&lt;/h2&gt;
+
+&lt;p&gt;State is represented by integer variable which is set to &lt;code&gt;1&lt;/code&gt; if key
+gpio pin has HIGH level and &lt;code&gt;0&lt;/code&gt; otherwise.&lt;/p&gt;
+
+&lt;h2 id=&#34;actions&#34;&gt;Actions&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;on&lt;/strong&gt; Sets state to &lt;code&gt;1&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;off&lt;/strong&gt; Sets state to &lt;code&gt;0&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;toggle&lt;/strong&gt; Switches state to the opposite value&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;state(int val)&lt;/strong&gt; Switches state according passed parameter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+
+&lt;h3 id=&#34;controlling-lights-with-a-switch&#34;&gt;Controlling lights with a switch&lt;/h3&gt;
+
+&lt;p&gt;In this example we have 2 devices. A &lt;a href=&#34;https://jointbox.github.io/docs/modules/button&#34;&gt;button&lt;/a&gt;
+connected to GPIO pin &lt;code&gt;PA1&lt;/code&gt; and relay connected to pin &lt;code&gt;PA6&lt;/code&gt;. Each time
+button is pressed relay changes state.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;bedroom_lamp&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;module_name&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;PowerKey&lt;/span&gt;
+    &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;gpio&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;PA1&lt;/span&gt;
+
+  &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;switch&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt;
+    &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;module_name&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;Button&lt;/span&gt;
+    &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;gpio&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;PA6&lt;/span&gt;
+    &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;pipe&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt;
+      &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;click&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt; &lt;span class=&#34;s&#34;&gt;&amp;#39;#bedroom_lamp.toggle&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 </description>
     </item>
     
