@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Modules on JointBox - Your DIY smart home. Simplified.</title>
-    <link>https://jointbox.org/docs/module/index.xml</link>
+    <link>https://jointbox.org/module/index.xml</link>
     <description>Recent content in Modules on JointBox - Your DIY smart home. Simplified.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Mar 2017 21:51:25 +0300</lastBuildDate>
-    <atom:link href="https://jointbox.org/docs/module/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jointbox.org/module/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>button</title>
-      <link>https://jointbox.org/docs/module/button/</link>
+      <link>https://jointbox.org/module/button/</link>
       <pubDate>Tue, 28 Mar 2017 21:51:25 +0300</pubDate>
       
-      <guid>https://jointbox.org/docs/module/button/</guid>
+      <guid>https://jointbox.org/module/button/</guid>
       <description>&lt;p&gt;Test page&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jointbox.org/docs/module/power_key/</link>
+      <link>https://jointbox.org/module/power_key/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jointbox.org/docs/module/power_key/</guid>
+      <guid>https://jointbox.org/module/power_key/</guid>
       <description>
 
 &lt;p&gt;This is description&lt;/p&gt;
@@ -54,7 +54,7 @@ gpio pin has HIGH level and &lt;code&gt;0&lt;/code&gt; otherwise.&lt;/p&gt;
 
 &lt;h3 id=&#34;controlling-lights-with-a-switch&#34;&gt;Controlling lights with a switch&lt;/h3&gt;
 
-&lt;p&gt;In this example we have 2 devices. A &lt;a href=&#34;https://jointbox.org/docs/modules/button&#34;&gt;button&lt;/a&gt;
+&lt;p&gt;In this example we have 2 devices. A &lt;a href=&#34;https://jointbox.org/modules/button&#34;&gt;button&lt;/a&gt;
 connected to GPIO pin &lt;code&gt;PA1&lt;/code&gt; and relay connected to pin &lt;code&gt;PA6&lt;/code&gt;. Each time
 button is pressed relay changes state.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;bedroom_lamp&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt;
@@ -72,10 +72,10 @@ button is pressed relay changes state.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>https://jointbox.org/docs/module/w1_thermometer/</link>
+      <link>https://jointbox.org/module/w1_thermometer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jointbox.org/docs/module/w1_thermometer/</guid>
+      <guid>https://jointbox.org/module/w1_thermometer/</guid>
       <description></description>
     </item>
     
