@@ -6,6 +6,12 @@ metaDataFormat: "yaml"
 # color-codes for highlighting derived from this style
 pygmentsStyle: "monokai"
 pygmentsCodeFences: true
+pygmentsUseClasses: true
+
+sitemap:
+  changefreq: "monthly"
+  priority: 0.5
+  filename: "sitemap.xml"
 
 params:
   GithubLink: "https://github.com/JointBox/jointbox"

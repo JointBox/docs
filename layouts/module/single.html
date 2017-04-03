@@ -1,0 +1,16 @@
+{{ partial "docs/header.html" . }}
+
+<div class="doc-article container">
+    <article class="module">
+        <header>
+            <h1>{{ $.Params.verbose_name }}</h1>
+        </header>
+
+        {{ .Content }}
+        <footer>
+
+        </footer>
+    </article>
+</div>
+
+{{ partial "docs/footer.html" . }}

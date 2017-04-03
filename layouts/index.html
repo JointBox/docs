@@ -1,4 +1,4 @@
-{{ partial "header.html" . }}
+{{ partial "home/header.html" . }}
 
 <section id="fh5co-home" data-section="home"
          style="background-image: url('{{ $.Site.BaseURL }}/images/cover-hardware-pcb.jpeg')"
@@ -126,7 +126,7 @@
                     &nbsp;<span><a href="#">Quickstart guide</a></span>
                 </p>
                 <p>Prefer PIP?</p>
-                <div>{{ highlight `pip install jointbox-server` "bash" ""}}</div>
+                <div>{{ highlight `pip install jointbox-server` "python" ""}}</div>
             </div>
         </div>
     </div>
@@ -212,4 +212,4 @@
     </div>
 </section>
 
-{{ partial "footer.html" . }}
+{{ partial "home/footer.html" . }}

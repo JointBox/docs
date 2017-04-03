@@ -16,7 +16,6 @@
     <meta name="keywords" content="dyi, raspberry pi, smart home, automation, home automation, python"/>
     {{ with .Site.Params.author}}<meta name="author" content="{{ . }}"/>{{end}}
 
-
     <!--
       //////////////////////////////////////////////////////
 
@@ -51,11 +50,9 @@
     <link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/icomoon.css">
     <!-- Simple Line Icons -->
     <link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/simple-line-icons.css">
-    <!-- Magnific Popup -->
-    <link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/magnific-popup.css">
     <!-- Bootstrap  -->
     <link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/bootstrap.css">
-
+    <link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/highlight-monokai.css">
     <link rel="stylesheet" href="{{ $.Site.BaseURL }}/css/style.css">
 
     <!-- Modernizr JS -->
@@ -67,7 +64,7 @@
 
 </head>
 <body>
-<header role="banner" id="fh5co-header">
+<header role="banner" id="header" class="navbar-fixed-top">
     <div class="container">
         <!-- <div class="row"> -->
         <nav class="navbar navbar-default">
@@ -75,10 +72,10 @@
                 <!-- Mobile Toggle Menu Button -->
                 <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar"
                    aria-expanded="false" aria-controls="navbar"><i></i></a>
-                <a class="navbar-brand" href="index.html"><span class="logo"></span></a>
+                <a class="navbar-brand" href="{{ $.Site.BaseURL }}"><span class="logo"></span></a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-                {{ partial "menu.html" . }}
+                {{ partial "docs/menu.html" . }}
             </div>
         </nav>
         <!-- </div> -->
