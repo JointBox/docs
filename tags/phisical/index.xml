@@ -2,28 +2,28 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Phisical on JointBox - Your DIY smart home. Simplified.</title>
-    <link>https://jointbox.github.io/docs/tags/phisical/index.xml</link>
+    <link>https://jointbox.org/docs/tags/phisical/index.xml</link>
     <description>Recent content in Phisical on JointBox - Your DIY smart home. Simplified.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="https://jointbox.github.io/docs/tags/phisical/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jointbox.org/docs/tags/phisical/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>button</title>
-      <link>https://jointbox.github.io/docs/module/button/</link>
+      <link>https://jointbox.org/docs/module/button/</link>
       <pubDate>Tue, 28 Mar 2017 21:51:25 +0300</pubDate>
       
-      <guid>https://jointbox.github.io/docs/module/button/</guid>
+      <guid>https://jointbox.org/docs/module/button/</guid>
       <description>&lt;p&gt;Test page&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://jointbox.github.io/docs/module/w1_thermometer/</link>
+      <link>https://jointbox.org/docs/module/w1_thermometer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jointbox.github.io/docs/module/w1_thermometer/</guid>
+      <guid>https://jointbox.org/docs/module/w1_thermometer/</guid>
       <description></description>
     </item>
     
