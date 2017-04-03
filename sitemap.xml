@@ -2,79 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jointbox.org/module/button/</loc>
+    <loc>http://jointbox.org/module/button/</loc>
     <lastmod>2017-03-28T21:51:25+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/module/power_key/</loc>
+    <loc>http://jointbox.org/module/power_key/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/module/w1_thermometer/</loc>
+    <loc>http://jointbox.org/module/w1_thermometer/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/tags/1-wire/</loc>
+    <loc>http://jointbox.org/tags/1-wire/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/tags/core/</loc>
+    <loc>http://jointbox.org/tags/core/</loc>
     <lastmod>2017-03-28T21:51:25+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/tags/gpio/</loc>
+    <loc>http://jointbox.org/tags/gpio/</loc>
     <lastmod>2017-03-28T21:51:25+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/</loc>
+    <loc>http://jointbox.org/</loc>
     <lastmod>2017-03-28T21:51:25+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/tags/lights/</loc>
+    <loc>http://jointbox.org/tags/lights/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/tags/measurement/</loc>
+    <loc>http://jointbox.org/tags/measurement/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/module/</loc>
+    <loc>http://jointbox.org/module/</loc>
     <lastmod>2017-03-28T21:51:25+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/tags/phisical/</loc>
+    <loc>http://jointbox.org/tags/phisical/</loc>
     <lastmod>2017-03-28T21:51:25+03:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://jointbox.org/tags/</loc>
+    <loc>http://jointbox.org/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
