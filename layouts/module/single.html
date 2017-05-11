@@ -1,11 +1,36 @@
 {{ partial "docs/header.html" . }}
 
 <div class="doc-article container">
+    {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "/" }}
+    <ol class="breadcrumb">
+        <li><a href="/"><i class="icon-home"></i></a></li>
+        {{ range $index, $element := split $url "/" }}
+        {{ if ne $element "" }}
+        <li><a href="{{ . | absURL }}">{{ . }}</a></li>
+        {{ end }}
+        {{ end }}
+    </ol>
     <article class="module">
-        <header>
-            <h1>{{ $.Params.verbose_name }}</h1>
-        </header>
-
+        <div class="container">
+            <div class="img-wrapper col-md-4">
+                <img src="{{ $.Site.BaseURL }}/images/modules/{{ .Params.image }}" alt="{{ .Params.verbose_name }}"
+                     class="img-responsive ">
+            </div>
+            <header class="col-md-8">
+                <h1>{{ $.Params.verbose_name }}</h1>
+                <p>
+                    {{ $.Params.description }}
+                </p>
+                <div>
+                    <div class="table-of-contents">
+                        {{.TableOfContents}}
+                    </div>
+                    <div class="meta">
+                        Tags: <span>{{ delimit .Params.tags ", " }}</span>
+                    </div>
+                </div>
+            </header>
+        </div>
         {{ .Content }}
         <footer>
 

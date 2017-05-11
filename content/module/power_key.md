@@ -32,7 +32,7 @@ gpio pin has HIGH level and `0` otherwise.
 
 ### Controlling lights with a switch
 
-In this example we have 2 devices. A [button](/modules/button)
+In this example we have 2 devices. A [button](/module/button)
 connected to GPIO pin `PA1` and relay connected to pin `PA6`. Each time
 button is pressed relay changes state.
 

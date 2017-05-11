@@ -1471,15 +1471,6 @@ h1, h2, h3, h4, h5, h6 {
   animation-fill-mode: both;
 }
 
-.doc-article {
-  margin-top: 100px;
-  header {
-    h1 {
-
-    }
-  }
-}
-
 .highlight {
   border: 1px solid #ccc;
 
@@ -1491,6 +1482,61 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #23241f;
     border: none;
     margin: 0;
+  }
+}
+
+.docs {
+  .modules-list {
+    margin-top: 100px;
+    .module-item {
+      $imageWidth: 100px;
+
+      &:hover {
+        background: $table-bg-hover;
+      }
+
+      .img-wrapper {
+        max-width: $imageWidth;
+        margin-right: 5px;
+        float: left;
+      }
+      .text-wrapper {
+        float: left;
+        width: calc(100% - #{$imageWidth} - 5px);
+        h2 {
+          font-size: 1.1em;
+          margin-bottom: 6px;
+        }
+        p {
+          font-size: 0.85em;
+          color: $text-color;
+        }
+      }
+    }
+  }
+
+  .doc-article {
+    margin-top: 100px;
+    .img-wrapper img {
+
+    }
+    header {
+      h1 {
+
+      }
+      .meta {
+        font-size: 0.7em;
+      }
+      #TableOfContents {
+        > ul {
+          list-style-type: none;
+          padding: 0;
+          ul ul {
+            display: none;
+          }
+        }
+      }
+    }
   }
 }
 

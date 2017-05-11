@@ -1,0 +1,12 @@
+<div class="col-md-6 col-sm-6 col-xxs-12 module-item">
+    <a href="{{ .RelPermalink }}" class="">
+        <div class="img-wrapper">
+            <img src="{{ $.Site.BaseURL }}/images/modules/{{ .Params.image }}" alt="{{ .Params.verbose_name }}" class="img-responsive ">
+        </div>
+        <div class="text-wrapper">
+            <h2>{{ .Params.verbose_name }}</h2>
+            <p>{{ .Params.description }}</p>
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</div>

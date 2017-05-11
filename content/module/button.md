@@ -10,7 +10,7 @@ requires:
 - gpio
 source_code: null
 tags: [ "core", "GPIO", "phisical" ]
-title: button
+title: Button
 
 ---
 
