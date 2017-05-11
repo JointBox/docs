@@ -9,6 +9,25 @@
     <atom:link href="http://jointbox.org/tags/phisical/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>NeoPixel Strip</title>
+      <link>http://jointbox.org/module/neopixel_strip/</link>
+      <pubDate>Fri, 12 May 2017 02:21:54 +0300</pubDate>
+      
+      <guid>http://jointbox.org/module/neopixel_strip/</guid>
+      <description>&lt;p&gt;Documentation is not ready yet&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Motion Sensor</title>
+      <link>http://jointbox.org/module/motion_sensor/</link>
+      <pubDate>Fri, 12 May 2017 02:05:25 +0300</pubDate>
+      
+      <guid>http://jointbox.org/module/motion_sensor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Button</title>
       <link>http://jointbox.org/module/button/</link>
       <pubDate>Tue, 28 Mar 2017 21:51:25 +0300</pubDate>

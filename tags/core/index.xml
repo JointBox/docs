@@ -9,6 +9,15 @@
     <atom:link href="http://jointbox.org/tags/core/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Motion Sensor</title>
+      <link>http://jointbox.org/module/motion_sensor/</link>
+      <pubDate>Fri, 12 May 2017 02:05:25 +0300</pubDate>
+      
+      <guid>http://jointbox.org/module/motion_sensor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Button</title>
       <link>http://jointbox.org/module/button/</link>
       <pubDate>Tue, 28 Mar 2017 21:51:25 +0300</pubDate>
@@ -26,7 +35,14 @@
       <guid>http://jointbox.org/module/power_key/</guid>
       <description>
 
-&lt;p&gt;This is description&lt;/p&gt;
+&lt;p&gt;The main purpose of the module is controlling external load via GPIO.
+Any type of the device which uses discrete digital interface should be
+supported. The most common scenario is relay board based on electro
+magnetic relays. There are multiple variations of these boards available
+on the market including multi-chanel modules, modules based on solid state relays.&lt;/p&gt;
+
+&lt;p&gt;Also it might be useful to control simple transistor if it is compatible
+with GPIO voltage of your board.&lt;/p&gt;
 
 &lt;h2 id=&#34;parameters&#34;&gt;Parameters&lt;/h2&gt;
 

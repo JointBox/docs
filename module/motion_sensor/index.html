@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Motion Sensor</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="JointBox makes home automation much easier."/>
     <meta name="keywords" content="dyi, raspberry pi, smart home, automation, home automation, python"/>
@@ -87,7 +87,7 @@
         
         
         
-        <li><a href="http://jointbox.org/power_key">power_key</a></li>
+        <li><a href="http://jointbox.org/motion_sensor">motion_sensor</a></li>
         
         
         
@@ -97,14 +97,14 @@
         <div class="container">
             <div class="row">
                 <div class="img-wrapper col-md-4">
-                    <img src="http://jointbox.org//images/modules/powerkey.jpg" alt="Power Key"
+                    <img src="http://jointbox.org//images/modules/pir-motion-sensor.jpg" alt="Motion Sensor"
                          class="img-responsive ">
                     <div class="meta container-fluid">
                         <div class="row">
                             <div class="col-xs-6">
                                 <i class="icon-github"></i> &nbsp;
                                 <span><a target="_blank"
-                                         href="https://github.com/JointBox/jointbox/blob/master/src/modules/power_key/__init__.py">Source Code</a></span>
+                                         href="https://github.com/JointBox/jointbox/blob/master/src/modules/motion_sensor/__init__.py">Source Code</a></span>
                             </div>
                             <div class="col-xs-6">
                                 
@@ -114,35 +114,22 @@
                         </div>
                         <div class="row">
                             <div class="col-xs-12">
-                                <i class="icon-tag"></i> &nbsp; <span>core, GPIO, lights, featured</span><br>
+                                <i class="icon-tag"></i> &nbsp; <span>core, GPIO, phisical, featured, lights</span><br>
                             </div>
                         </div>
                     </div>
                 </div>
                 <header class="col-md-8">
-                    <h1>Power Key 
+                    <h1>Motion Sensor 
                         <i class="icon-check-circle" title="Core Module"></i>
                     </h1>
                     
                     <p>
-                        Allows to turn on or off any external load. Might be useful for controlling lights.
+                        Triggers event even detects motion
                     </p>
                     <div>
                         <div class="table-of-contents">
-                            <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#parameters">Parameters</a></li>
-<li><a href="#state">State</a></li>
-<li><a href="#actions">Actions</a></li>
-<li><a href="#examples">Examples</a>
-<ul>
-<li><a href="#controlling-lights-with-a-switch">Controlling lights with a switch</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
+                            
                         </div>
                     </div>
                 </header>
@@ -150,55 +137,6 @@
         </div>
         <hr>
         
-
-<p>The main purpose of the module is controlling external load via GPIO.
-Any type of the device which uses discrete digital interface should be
-supported. The most common scenario is relay board based on electro
-magnetic relays. There are multiple variations of these boards available
-on the market including multi-chanel modules, modules based on solid state relays.</p>
-
-<p>Also it might be useful to control simple transistor if it is compatible
-with GPIO voltage of your board.</p>
-
-<h2 id="parameters">Parameters</h2>
-
-<ul>
-<li><strong>gpio</strong> GPIO pin identifier. The pin connected to the executive
-module (e.g. relay)</li>
-</ul>
-
-<h2 id="state">State</h2>
-
-<p>State is represented by integer variable which is set to <code>1</code> if key
-gpio pin has HIGH level and <code>0</code> otherwise.</p>
-
-<h2 id="actions">Actions</h2>
-
-<ul>
-<li><strong>on</strong> Sets state to <code>1</code></li>
-<li><strong>off</strong> Sets state to <code>0</code></li>
-<li><strong>toggle</strong> Switches state to the opposite value</li>
-<li><strong>state(int val)</strong> Switches state according passed parameter</li>
-</ul>
-
-<h2 id="examples">Examples</h2>
-
-<h3 id="controlling-lights-with-a-switch">Controlling lights with a switch</h3>
-
-<p>In this example we have 2 devices. A <a href="/module/button">button</a>
-connected to GPIO pin <code>PA1</code> and relay connected to pin <code>PA6</code>. Each time
-button is pressed relay changes state.</p>
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span>  <span class="l l-Scalar l-Scalar-Plain">bedroom_lamp</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">module_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">PowerKey</span>
-    <span class="l l-Scalar l-Scalar-Plain">gpio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">PA1</span>
-
-  <span class="l l-Scalar l-Scalar-Plain">switch</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">module_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Button</span>
-    <span class="l l-Scalar l-Scalar-Plain">gpio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">PA6</span>
-    <span class="l l-Scalar l-Scalar-Plain">pipe</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">click</span><span class="p p-Indicator">:</span> <span class="s">&#39;#bedroom_lamp.toggle&#39;</span>
-</code></pre></div>
-
         <footer>
 
         </footer>
