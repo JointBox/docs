@@ -7,7 +7,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Modules</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="JointBox makes home automation much easier."/>
     <meta name="keywords" content="dyi, raspberry pi, smart home, automation, home automation, python"/>
@@ -75,105 +75,50 @@
 </header>
 
 
-<div class="doc-article container">
-    
-    <ol class="breadcrumb">
-        <li><a href="/"><i class="icon-home"></i></a></li>
+<div class="container modules-list">
+    <h1>Available modules</h1>
+    <div class="row">
         
-        
-        
-        
-        <li><a href="http://jointbox.org/module">module</a></li>
-        
-        
-        
-        <li><a href="http://jointbox.org/power_key">power_key</a></li>
-        
-        
-        
-        
-    </ol>
-    <article class="module">
-        <div class="container">
-            <div class="img-wrapper col-md-4">
-                <img src="http://jointbox.org//images/modules/powerkey.jpg" alt="Power Key"
-                     class="img-responsive ">
-            </div>
-            <header class="col-md-8">
-                <h1>Power Key</h1>
-                <p>
-                    Allows to turn on or off any load. Might be useful for controlling lights.
-                </p>
-                <div>
-                    <div class="table-of-contents">
-                        <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#parameters">Parameters</a></li>
-<li><a href="#state">State</a></li>
-<li><a href="#actions">Actions</a></li>
-<li><a href="#examples">Examples</a>
-<ul>
-<li><a href="#controlling-lights-with-a-switch">Controlling lights with a switch</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-                    </div>
-                    <div class="meta">
-                        Tags: <span>core, GPIO, lights</span>
-                    </div>
-                </div>
-            </header>
+            <div class="col-md-6 col-sm-6 col-xxs-12 module-item">
+    <a href="/module/button/" class="">
+        <div class="img-wrapper">
+            <img src="http://jointbox.org//images/modules/button.jpg" alt="Button" class="img-responsive ">
         </div>
+        <div class="text-wrapper">
+            <h2>Button</h2>
+            <p>Button which is able to detect click, double click and long click events</p>
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</div>
         
-
-<p>This is description</p>
-
-<h2 id="parameters">Parameters</h2>
-
-<ul>
-<li><strong>gpio</strong> GPIO pin identifier. The pin connected to the executive
-module (e.g. relay)</li>
-</ul>
-
-<h2 id="state">State</h2>
-
-<p>State is represented by integer variable which is set to <code>1</code> if key
-gpio pin has HIGH level and <code>0</code> otherwise.</p>
-
-<h2 id="actions">Actions</h2>
-
-<ul>
-<li><strong>on</strong> Sets state to <code>1</code></li>
-<li><strong>off</strong> Sets state to <code>0</code></li>
-<li><strong>toggle</strong> Switches state to the opposite value</li>
-<li><strong>state(int val)</strong> Switches state according passed parameter</li>
-</ul>
-
-<h2 id="examples">Examples</h2>
-
-<h3 id="controlling-lights-with-a-switch">Controlling lights with a switch</h3>
-
-<p>In this example we have 2 devices. A <a href="/module/button">button</a>
-connected to GPIO pin <code>PA1</code> and relay connected to pin <code>PA6</code>. Each time
-button is pressed relay changes state.</p>
-<div class="highlight"><pre><code class="language-yaml" data-lang="yaml"><span></span>  <span class="l l-Scalar l-Scalar-Plain">bedroom_lamp</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">module_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">PowerKey</span>
-    <span class="l l-Scalar l-Scalar-Plain">gpio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">PA1</span>
-
-  <span class="l l-Scalar l-Scalar-Plain">switch</span><span class="p p-Indicator">:</span>
-    <span class="l l-Scalar l-Scalar-Plain">module_name</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">Button</span>
-    <span class="l l-Scalar l-Scalar-Plain">gpio</span><span class="p p-Indicator">:</span> <span class="l l-Scalar l-Scalar-Plain">PA6</span>
-    <span class="l l-Scalar l-Scalar-Plain">pipe</span><span class="p p-Indicator">:</span>
-      <span class="l l-Scalar l-Scalar-Plain">click</span><span class="p p-Indicator">:</span> <span class="s">&#39;#bedroom_lamp.toggle&#39;</span>
-</code></pre></div>
-
-        <footer>
-
-        </footer>
-    </article>
+            <div class="col-md-6 col-sm-6 col-xxs-12 module-item">
+    <a href="/module/power_key/" class="">
+        <div class="img-wrapper">
+            <img src="http://jointbox.org//images/modules/powerkey.jpg" alt="Power Key" class="img-responsive ">
+        </div>
+        <div class="text-wrapper">
+            <h2>Power Key</h2>
+            <p>Allows to turn on or off any load. Might be useful for controlling lights.</p>
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</div>
+        
+            <div class="col-md-6 col-sm-6 col-xxs-12 module-item">
+    <a href="/module/w1_thermometer/" class="">
+        <div class="img-wrapper">
+            <img src="http://jointbox.org//images/modules/w1_thermometer.jpg" alt="1-Wire Thermometer" class="img-responsive ">
+        </div>
+        <div class="text-wrapper">
+            <h2>1-Wire Thermometer</h2>
+            <p></p>
+        </div>
+        <div class="clearfix"></div>
+    </a>
+</div>
+        
+    </div>
 </div>
 
 <footer id="footer" role="contentinfo">

@@ -10,7 +10,7 @@
     <atom:link href="http://jointbox.org/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>button</title>
+      <title>Button</title>
       <link>http://jointbox.org/module/button/</link>
       <pubDate>Tue, 28 Mar 2017 21:51:25 +0300</pubDate>
       
@@ -54,7 +54,7 @@ gpio pin has HIGH level and &lt;code&gt;0&lt;/code&gt; otherwise.&lt;/p&gt;
 
 &lt;h3 id=&#34;controlling-lights-with-a-switch&#34;&gt;Controlling lights with a switch&lt;/h3&gt;
 
-&lt;p&gt;In this example we have 2 devices. A &lt;a href=&#34;http://jointbox.org/modules/button&#34;&gt;button&lt;/a&gt;
+&lt;p&gt;In this example we have 2 devices. A &lt;a href=&#34;http://jointbox.org/module/button&#34;&gt;button&lt;/a&gt;
 connected to GPIO pin &lt;code&gt;PA1&lt;/code&gt; and relay connected to pin &lt;code&gt;PA6&lt;/code&gt;. Each time
 button is pressed relay changes state.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span&gt;&lt;/span&gt;  &lt;span class=&#34;l l-Scalar l-Scalar-Plain&#34;&gt;bedroom_lamp&lt;/span&gt;&lt;span class=&#34;p p-Indicator&#34;&gt;:&lt;/span&gt;
