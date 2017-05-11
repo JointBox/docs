@@ -12,25 +12,54 @@
     </ol>
     <article class="module">
         <div class="container">
-            <div class="img-wrapper col-md-4">
-                <img src="{{ $.Site.BaseURL }}/images/modules/{{ .Params.image }}" alt="{{ .Params.verbose_name }}"
-                     class="img-responsive ">
-            </div>
-            <header class="col-md-8">
-                <h1>{{ $.Params.verbose_name }}</h1>
-                <p>
-                    {{ $.Params.description }}
-                </p>
-                <div>
-                    <div class="table-of-contents">
-                        {{.TableOfContents}}
-                    </div>
-                    <div class="meta">
-                        Tags: <span>{{ delimit .Params.tags ", " }}</span>
+            <div class="row">
+                <div class="img-wrapper col-md-4">
+                    <img src="{{ $.Site.BaseURL }}/images/modules/{{ .Params.image }}" alt="{{ .Params.verbose_name }}"
+                         class="img-responsive ">
+                    <div class="meta container-fluid">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <i class="icon-github"></i> &nbsp;
+                                <span><a target="_blank"
+                                         href="{{ .Params.source_code }}">Source Code</a></span>
+                            </div>
+                            <div class="col-xs-6">
+                                {{ if (eq .Params.is_core true) }}
+                                <i class="icon-check-circle"></i> &nbsp; Core module</span>
+                                {{ end }}
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <i class="icon-tag"></i> &nbsp; <span>{{ delimit .Params.tags ", " }}</span><br>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </header>
+                <header class="col-md-8">
+                    <h1>{{ $.Params.verbose_name }} {{ if eq .Params.is_core true }}
+                        <i class="icon-check-circle" title="Core Module"></i>{{ end }}
+                    </h1>
+                    {{ if isset .Params "under_development" }}
+                    <div class="alert alert-danger">
+                        <strong><i class="icon-warning"></i> Attention:</strong> This module is under development which
+                        means that either it is not fully implemented so actual implementation may differ from described
+                        here or it might be extremely buggy. Please consider it just as something to be available in
+                        future.
+                    </div>
+                    {{ end }}
+                    <p>
+                        {{ $.Params.description }}
+                    </p>
+                    <div>
+                        <div class="table-of-contents">
+                            {{.TableOfContents}}
+                        </div>
+                    </div>
+                </header>
+            </div>
         </div>
+        <hr>
         {{ .Content }}
         <footer>
 

@@ -2,14 +2,21 @@
 verbose_name: Power Key
 module_name: PowerKey
 image: powerkey.jpg
-description: "Allows to turn on or off any load. Might be useful for controlling lights."
-tags: [ "core", "GPIO", "lights" ]
+description: "Allows to turn on or off any external load. Might be useful for controlling lights."
+tags: [ "core", "GPIO", "lights", "featured" ]
 is_core: true
-source_code: /s000pf13/nitro
+source_code: https://github.com/JointBox/jointbox/blob/master/src/modules/power_key/__init__.py
 requires: [ "gpio" ]
 ---
 
-This is description
+The main purpose of the module is controlling external load via GPIO.
+Any type of the device which uses discrete digital interface should be
+supported. The most common scenario is relay board based on electro
+magnetic relays. There are multiple variations of these boards available
+on the market including multi-chanel modules, modules based on solid state relays.
+
+Also it might be useful to control simple transistor if it is compatible
+with GPIO voltage of your board.
 
 ## Parameters
 
