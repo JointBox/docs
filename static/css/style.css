@@ -437,7 +437,7 @@ h1, h2, h3, h4, h5, h6 {
         width: 100%; } }
     #intro .block > .overlay-darker {
       z-index: 8;
-      opacity: .5;
+      opacity: .8;
       background: #474747;
       position: absolute;
       left: 0;
@@ -474,6 +474,8 @@ h1, h2, h3, h4, h5, h6 {
       color: #fff; }
       #intro .block:hover > .text .fh5co-intro-icon, #intro .block:focus > .text .fh5co-intro-icon {
         color: #fff; }
+      #intro .block:hover > .text a, #intro .block:focus > .text a {
+        color: #5bc0de; }
     #intro .block:hover h2, #intro .block:focus h2 {
       color: #fff; }
     #intro .block:hover .btn, #intro .block:focus .btn {

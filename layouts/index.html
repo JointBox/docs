@@ -30,8 +30,9 @@
                 <div class="text">
                     <i class="fh5co-intro-icon icon-wrench"></i>
                     <h2>Setup with no coding</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas, nibh nec elementum
-                        consectetur, lorem ligula faucibus augue, eu mattis justo tortor ac sem.</p>
+                    <p>The main concept around JointBox is semantic configuration which allows to connect and configure
+                        hardware without writing code. Interaction between modules connected to JointBox is
+                        configuration driven as well.</p>
                     <p><a href="#" class="btn btn-primary">Getting Started</a></p>
                 </div>
             </div>
@@ -42,10 +43,15 @@
                 <div class="text">
                     <i class="fh5co-intro-icon icon-bulb"></i>
                     <h2>Popular modules supported</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam egestas, nibh nec elementum
-                        consectetur, lorem ligula faucibus augue, eu mattis justo tortor ac sem. Duis ac turpis
-                        ultrices, posuere eros in, luctus tellus. </p>
-                    <p><a href="#" class="btn btn-primary">See the list</a></p>
+                    <p>JointBox supports tons of widely available modules and sensors.
+                        Most of the <a target="_blank" href="https://www.arduino.cc/">Arduino</a> modules
+                        useful for home automation are already supported, more are coming.</p>
+                    <p>
+                        <a href='{{ relref . "module/w1_thermometer.md" }}'>DS18S20</a>,
+                        <a href='{{ relref . "module/power_key.md" }}'>Relays</a>,
+                        DHT-11, and other already available.
+                    </p>
+                    <p><a href="{{ relref . "module/index.md" }}" class="btn btn-primary">See the list</a></p>
                 </div>
             </div>
             <div class="block to-animate"
@@ -55,9 +61,10 @@
                 <div class="text">
                     <i class="fh5co-intro-icon icon-rocket"></i>
                     <h2>Network connected</h2>
-                    <p>Nam egestas, nibh nec elementum
-                        consectetur, lorem ligula faucibus augue, eu mattis justo tortor ac sem. Duis ac turpis
-                        ultrices, posuere eros in</p>
+                    <p>JointBox supports TCP\IP network stack and popular high level network protocols like
+                        <a target="_blank" href="https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol">HTTP</a> and
+                        <a target="_blank" href="http://mqtt.org/">MQTT</a> which enables it to talk to other pieces
+                        of home automation software e.g. <a target="_blank" href="https://www.openhab.org/">OpenHab</a>. </p>
                     <p><a href="#" class="btn btn-primary">Check use case</a></p>
                 </div>
             </div>
