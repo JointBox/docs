@@ -594,7 +594,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     > .overlay-darker {
       z-index: 8;
-      opacity: .5;
+      opacity: .8;
       background: #474747;
 
       position: absolute;
@@ -639,7 +639,9 @@ h1, h2, h3, h4, h5, h6 {
         .fh5co-intro-icon {
           color: $brand-white;
         }
-
+        a {
+          color: $brand-info;
+        }
       }
       h2 {
         color: $brand-white;
